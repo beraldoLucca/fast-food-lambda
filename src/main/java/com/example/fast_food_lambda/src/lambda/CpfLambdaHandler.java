@@ -18,6 +18,8 @@ import java.util.Map;
 public class CpfLambdaHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     private static final String API_URL = "http://host.docker.internal:8080/api/v1/customer/";
+    //para ler a variavel de ambiente da aws:
+    //private static final String API_URL = System.getenv("API_URL");
 
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent event, Context context) {
