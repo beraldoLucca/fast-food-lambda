@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: |
           mvn clean package
-          zip -r lambda.zip target/*.jar
+          zip -r terraform/lambda.zip target/*.jar
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v2
