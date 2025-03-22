@@ -23,7 +23,7 @@ import java.util.Map;
 public class CpfLambdaHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     //private static final String API_URL = "http://host.docker.internal:8080/api/v1/customer/";
-    private static final String SECRET_NAME = "eks-service-url-9";
+    private static final String SECRET_NAME = "eks-service-url-11";
     private final SecretsManagerClient secretsManagerClient = SecretsManagerClient.builder()
             .region(Region.US_EAST_1)
             .credentialsProvider(DefaultCredentialsProvider.create())
