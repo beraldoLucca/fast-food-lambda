@@ -1,9 +1,8 @@
 name: Deploy da Lambda
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+
 
 
 jobs:
